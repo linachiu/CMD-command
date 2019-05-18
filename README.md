@@ -16,7 +16,11 @@
 
 - 開機自動執行 echo "hello world" > /Users/xxxxxx/Music/hi.txt
 
-- 排程 crontab -e ,  crontab -l ,  crontab -r 意思
+- 排程 crontab -e ,  crontab -l ,  crontab -r, crontab -e -uwww 意思
+- ```crontab -e``` 用vi編輯排程
+- ```crontab -l``` 查看排程
+- ```crontab -r``` 刪除排程
+- ```crontab -e -uwww``` 使用編輯www權限下的排程
 
 
 - 用crontab排程 每10秒 送 post request  可以用任何方法 (hint curl + sleep)

@@ -75,29 +75,32 @@ chattr -i /home/wwwroot/你的网站目录/.user.ini
 
 - 路由設定怎麼新增修改網卡資訊為靜態網路後可以成功聯網 （使用以下資訊）
 
-DEVICE=eth0
-BOOTPROTO=dhcp
-HWADDR=00:0C:29:1D:F0:FE
-NM_CONTROLLED=yes
-ONBOOT=yes
-TYPE=Ethernet
+  ```
+  DEVICE=eth0
+  BOOTPROTO=dhcp
+  HWADDR=00:0C:29:1D:F0:FE
+  NM_CONTROLLED=yes
+  ONBOOT=yes
+  TYPE=Ethernet
+  ```
 
+  -網路資訊
+  ```
+  DNS:8.8.8.8 
+  遮罩:255.255.255.0
+  路由:192.168.6.1
+  IPV4: 172.30.156.23
+  ```
 
-網路資訊
-DNS:8.8.8.8 
-遮罩:255.255.255.0
-路由:192.168.6.1
-IPV4: 172.30.156.23
-
-```
-DEVICE=eth0
-BOOTPROTO=static (原本為dhcp)
-HWADDR=00:0C:29:1D:F0:FE
-NM_CONTROLLED=yes
-ONBOOT=yes
-TYPE=Ethernet
-DNS1=8.8.8.8
-GATEWAY=192.168.6.1
-NETMASK=255.255.255.0
-IPADDR=172.30.156.23
-```
+  ```
+  DEVICE=eth0
+  BOOTPROTO=static (原本為dhcp)
+  HWADDR=00:0C:29:1D:F0:FE
+  NM_CONTROLLED=yes
+  ONBOOT=yes
+  TYPE=Ethernet
+  DNS1=8.8.8.8
+  GATEWAY=192.168.6.1
+  NETMASK=255.255.255.0
+  IPADDR=172.30.156.23
+  ```
